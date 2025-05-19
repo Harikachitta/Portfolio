@@ -1,40 +1,33 @@
-// Menu toggle for hamburger nav
-function toggleMenu() {
-  const menu = document.querySelector(".navbar-menu");
-  const hamburger = document.querySelector(".hamburger");
-
-  if (menu && hamburger) {
-    menu.classList.toggle("active");
-    hamburger.classList.toggle("active");
-
-    // Accessibility: toggle aria-expanded on hamburger button
-    const expanded = hamburger.getAttribute("aria-expanded") === "true";
-    hamburger.setAttribute("aria-expanded", !expanded);
-  }
-}
-
-// Event listener for hamburger click
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
-  if (hamburger) {
-    hamburger.addEventListener("click", toggleMenu);
+  const navMenu = document.querySelector(".navbar-menu");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+
+      // Accessibility
+      const expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", !expanded);
+    });
   }
 
-  // Scroll-triggered fade-in animations
+  // Scroll fade-in effect
   const faders = document.querySelectorAll('.fade-in');
-
-  const appearOptions = {
+  const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px"
   };
 
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-  }, appearOptions);
+  }, observerOptions);
 
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
