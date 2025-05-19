@@ -120,6 +120,8 @@ nav {
 
 #socials-container {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 #socials-container .icon {
   width: 30px;
