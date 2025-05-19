@@ -1,10 +1,44 @@
+/* Responsive Navigation & Layout */
+
 @media screen and (max-width: 1200px) {
-    #desktop-nav{
-        display: none;
-    }
-    #hamburger-nav{
-        display: flex;
-    }
+  .nav-links {
+    display: none;
+  }
 
+  #hamburger {
+    display: flex;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  #profile.container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text {
+    max-width: 100%;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
