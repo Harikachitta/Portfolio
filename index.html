@@ -3,146 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
+  <title>Harika Chitta | Project Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="nav" role="navigation" aria-label="Primary Navigation">
-    <div class="logo" aria-label="Logo">PORTFOLIO</div>
-    <ul class="nav-links" role="menubar">
-      <li role="none"><a href="#hero" role="menuitem" tabindex="0">Home</a></li>
-      <li role="none"><a href="#about" role="menuitem" tabindex="0">About</a></li>
-      <li role="none"><a href="#experience" role="menuitem" tabindex="0">Experience</a></li>
-      <li role="none"><a href="#projects" role="menuitem" tabindex="0">Projects</a></li>
-      <li role="none"><a href="#contact" role="menuitem" tabindex="0">Contact</a></li>
-    </ul>
-    <div id="hamburger" class="menu-icon" aria-label="Menu" role="button" aria-expanded="false" tabindex="0">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" class="container fade-in">
-    <p class="hero-intro">Hello, my name is</p>
-    <h1 class="hero-name">Your Name</h1>
-    <p class="hero-title">Creative Developer & Problem Solver</p>
-    <div class="btn-container">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-secondary">Contact Me</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="container fade-in" tabindex="0" aria-label="About me">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I'm a passionate developer specializing in building modern, responsive web applications.
-      I love creating clean, user-friendly designs and bringing ideas to life with code.
-    </p>
-    <p>
-      With experience in JavaScript, React, Node.js, and backend technologies, I focus on delivering
-      high-quality, maintainable software.
-    </p>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="container fade-in" tabindex="0" aria-label="Work Experience and Education">
-    <h2 class="section-title">Experience & Education</h2>
-    <div class="cards-container">
-      <article class="card" tabindex="0">
-        <h3>Software Developer - Company ABC</h3>
-        <p>June 2022 - Present</p>
-        <p>Developed full-stack web apps using React and Node.js, improving client workflows by 30%.</p>
-      </article>
-      <article class="card" tabindex="0">
-        <h3>Bachelor of Computer Science</h3>
-        <p>University XYZ, 2018 - 2022</p>
-        <p>Graduated with honors. Specialized in software engineering and algorithms.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="container fade-in" tabindex="0" aria-label="Projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-wrapper">
-      <div class="project-card" tabindex="0">
-        <h3>Project One</h3>
-        <p class="project-date">Jan 2023</p>
-        <p>Built a task management app with real-time collaboration features using React and Firebase.</p>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">Harika Chitta</div>
+      <ul class="navbar-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
       </div>
-      <div class="project-card" tabindex="0">
-        <h3>Project Two</h3>
-        <p class="project-date">Oct 2022</p>
-        <p>Developed an e-commerce website with integrated payment gateways and user-friendly UI.</p>
-      </div>
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container fade-in" tabindex="0" aria-label="Contact Information">
-    <h2 class="section-title">Get in Touch</h2>
-    <p>Feel free to reach out via email or follow me on social media.</p>
-    <div class="contact-info">
-      <div>
-        <img class="icon-small" src="email-icon.svg" alt="Email icon" />
-        <span>your.email@example.com</span>
+  <main>
+    <section id="hero" class="section hero">
+      <h1>Hi, I'm <span>Harika Chitta</span></h1>
+      <p>Project Engineer | Architecture & Construction Management</p>
+      <div class="buttons">
+        <a href="./assets/Resume_HarikaChitta.pdf" class="btn primary-btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
       </div>
-      <div>
-        <img class="icon-small" src="phone-icon.svg" alt="Phone icon" />
-        <span>+123 456 7890</span>
+    </section>
+
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <p>
+        I’m a dedicated Project Engineer with a background in architecture and construction management.
+        With a Master’s from the University of Texas at Arlington and hands-on experience in project planning, budgeting, and sustainable design, I bridge the gap between vision and execution.
+      </p>
+      <p>
+        I specialize in using tools like Procore, Bluebeam, and AutoCAD to deliver efficient and innovative construction solutions.
+      </p>
+      <p>
+        Outside work, I enjoy exploring architectural marvels and staying updated on green building trends.
+      </p>
+    </section>
+
+    <section id="experience" class="section experience-section">
+      <h2>Experience & Education</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>First Infra LLC</h3>
+          <span class="date-location">The Colony | Sep 2024 - Present</span>
+          <ul>
+            <li>Detailed quantity takeoffs & material cost estimates.</li>
+            <li>Coordinated city permits and approvals.</li>
+            <li>Prepared budgets and procurement schedules.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>V ONE DESIGN STUDIO</h3>
+          <span class="date-location">Hyderabad | Mar 2022 - Jul 2022</span>
+          <ul>
+            <li>Created physical & digital models for architectural projects.</li>
+            <li>Supervised onsite plan alignment.</li>
+            <li>Developed 2D & 3D drawings with AutoCAD and SketchUp.</li>
+          </ul>
+        </article>
+        <article class="card education-card">
+          <h3>University of Texas at Arlington</h3>
+          <span class="date-location">Master’s in Construction Management</span>
+          <p>Specialized in project planning & sustainable construction practices.</p>
+        </article>
+        <article class="card education-card">
+          <h3>SRI Venkateshwara College</h3>
+          <span class="date-location">Bachelor’s in Architecture</span>
+          <p>Focused on architectural design and structural systems.</p>
+        </article>
       </div>
-      <div>
-        <img class="icon-small" src="linkedin-icon.svg" alt="LinkedIn icon" />
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style="color:#ff6b6b;">LinkedIn</a>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Commercial & Residential Projects - First Infra LLC</h3>
+          <span class="date-location">The Colony | Sep 2024 - Present</span>
+          <p>Handled cost estimates, budgets, and collaborated with architects and engineers to ensure smooth project delivery.</p>
+        </div>
+        <div class="project">
+          <h3>Villa Communities & Interior Design - V ONE DESIGN STUDIO</h3>
+          <span class="date-location">Hyderabad | Mar 2022 - Jul 2022</span>
+          <p>Produced 2D/3D drawings, supervised site work, and helped create beautiful living spaces.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out via email or LinkedIn.</p>
+      <div class="contact-links">
+        <a href="mailto:hchitta99@gmail.com" class="contact-link">hchitta99@gmail.com</a>
+        <a href="https://www.linkedin.com/in/harikachitta/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Harika Chitta. All rights reserved.</p>
+  </footer>
 
   <script>
-    // Hamburger menu toggle script
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar-menu');
 
     hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('active');
     });
 
-    // Close menu when link clicked (for mobile)
-    document.querySelectorAll('.nav-links a').forEach(link => {
+    // Close menu on link click (mobile)
+    document.querySelectorAll('.navbar-menu a').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // Scroll-triggered fade-in animations
-    document.addEventListener('DOMContentLoaded', () => {
-      const faders = document.querySelectorAll('.fade-in');
-
-      const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-      };
-
-      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        });
-      }, appearOptions);
-
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
       });
     });
   </script>
-
+  
 </body>
 </html>
