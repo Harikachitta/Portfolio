@@ -4,24 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harika Chitta | Project Engineer</title>
+  <link rel="stylesheet" href="style.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navigation -->
-  <nav id="nav" class="sticky-nav">
+  <nav id="nav">
     <div class="logo">Harika Chitta</div>
     <ul class="nav-links">
       <li><a href="#about">About Me</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div id="hamburger" aria-label="Toggle Menu" tabindex="0" onclick="toggleMenu()">
+    <div id="hamburger" aria-label="Toggle Menu" tabindex="0">
       <span></span>
       <span></span>
       <span></span>
@@ -30,14 +29,14 @@
 
   <!-- Hero / Profile Section -->
   <section id="profile" class="container">
-    <div class="profile-pic animate-fade-in">
+    <div class="profile-pic">
       <img
         src="./assets/profile-pic.jpeg"
         alt="Harika Chitta Profile Picture"
         loading="lazy"
       />
     </div>
-    <div class="profile-text animate-fade-in delay-1">
+    <div class="profile-text">
       <p class="intro-text">Hello, I'm</p>
       <h1 class="name">Harika Chitta</h1>
       <p class="title">Project Engineer</p>
@@ -71,122 +70,112 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="container section animate-slide-up">
+  <section id="about" class="container section">
     <h2 class="section-title">About Me</h2>
-    <div class="about-wrapper">
-      <div class="about-text">
+    <div class="about-content">
+      <p>
+        I am a dedicated and detail-oriented Project Engineer with a strong foundation in architecture and construction management. My journey began with a Bachelor's degree in Architecture from SRI Venkateshwara College, where I developed a keen eye for design and structural integrity. Pursuing a Master's in Construction Management at the University of Texas at Arlington further honed my skills in project planning, cost estimation, and sustainable building practices.
+      </p>
+      <p>
+        Over the past two years, I've contributed to various projects, collaborating with multidisciplinary teams to deliver efficient and innovative solutions. My proficiency in tools like Procore, Bluebeam Revu, and AutoCAD enables me to bridge the gap between design and execution seamlessly. I am passionate about creating spaces that are not only functional but also environmentally responsible.
+      </p>
+      <p>
+        When I'm not immersed in project plans, I enjoy exploring architectural marvels and staying updated with the latest trends in sustainable construction. Let's connect and build something remarkable together.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="container section">
+    <h2 class="section-title">Experience & Education</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="./assets/experience.png" alt="Experience Icon" class="icon-large" />
+        <h3>Experience</h3>
         <p>
-          Detail-oriented and motivated Construction Management professional
-          with strong expertise in cost estimation, project planning, and
-          architectural design. Passionate about delivering innovative and
-          sustainable solutions to ensure project success.
+          <strong>First Infra LLC</strong><br />
+          The Colony, Sep 2024 - Present<br />
+          - Performed detailed quantity takeoffs and material cost estimates.<br />
+          - Collaborated with architects and engineers to align designs.<br />
+          - Prepared budgets and procurement schedules.<br />
+          - Coordinated city permitting and approvals.<br />
+          - Maintained updated records and cultivated subcontractor relationships.
+        </p>
+        <p>
+          <strong>V ONE DESIGN STUDIO</strong><br />
+          Hyderabad, Mar 2022 - Jul 2022<br />
+          - Created physical and digital models for architectural projects.<br />
+          - Supervised onsite work for plan alignment.<br />
+          - Worked on villa communities and interior design.<br />
+          - Developed 2D and 3D drawings with AutoCAD and SketchUp.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./assets/education.png" alt="Education Icon" class="icon-large" />
+        <h3>Education</h3>
+        <p>
+          <strong>Master's in Construction Management</strong><br />
+          University of Texas at Arlington<br />
+          - Specialized in project planning and sustainable construction practices.
+        </p>
+        <p>
+          <strong>Bachelor's in Architecture</strong><br />
+          SRI Venkateshwara College<br />
+          - Focused on architectural design and structural systems.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="container section animate-slide-up delay-1">
-    <h2 class="section-title">Education</h2>
-    <div class="education-grid">
-      <div class="edu-card">
-        <h3>Bachelor's in Architecture</h3>
-        <p>SRI Venkateshwara College</p>
-        <p>Year: XXXX - XXXX</p>
-      </div>
-      <div class="edu-card">
-        <h3>Master's in Construction Management</h3>
-        <p>University of Texas at Arlington</p>
-        <p>Year: XXXX - XXXX</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="container section animate-slide-up delay-2">
-    <h2 class="section-title">Experience & Skills</h2>
-    <div class="experience-grid">
-      <div class="experience-card">
-        <h3>First Infra LLC</h3>
-        <p class="project-date">The Colony, Sep 2024 - Present</p>
-        <ul>
-          <li>Performed detailed quantity takeoffs and material cost estimates for commercial and residential projects.</li>
-          <li>Collaborated with architects, MEP engineers, and structural consultants to align designs.</li>
-          <li>Prepared budgets and procurement schedules to support timely construction.</li>
-          <li>Coordinated city permitting and approvals.</li>
-          <li>Maintained updated records and cultivated strong subcontractor relationships.</li>
-        </ul>
-      </div>
-      <div class="experience-card">
-        <h3>V ONE DESIGN STUDIO</h3>
-        <p class="project-date">Hyderabad, Mar 2022 - Jul 2022</p>
-        <ul>
-          <li>Created physical and digital models for architectural projects.</li>
-          <li>Supervised onsite work for plan alignment.</li>
-          <li>Worked on villa communities and interior design.</li>
-          <li>Developed 2D and 3D drawings with AutoCAD and SketchUp.</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="skills-title">Skills</h3>
-    <div class="skills-grid">
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Procore</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Bluebeam Revu</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Insite</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Primavera P6</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>RS Means Cost Data</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>AutoCAD</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>BIM</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>VRay</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>PlanGrid</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>On-Screen Takeoff (OST)</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Lumion</p></article>
-      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>SketchUp</p></article>
-    </div>
-  </section>
-
   <!-- Projects Section -->
-  <section id="projects" class="container section animate-slide-up delay-3">
+  <section id="projects" class="container section">
     <h2 class="section-title">Projects</h2>
     <div class="projects-wrapper">
       <div class="project-card">
         <h3>First Infra LLC</h3>
         <p class="project-date">The Colony, Sep 2024 - Present</p>
         <p>
-          • Performed detailed quantity takeoffs and material cost estimates
-          for commercial and residential projects.<br />
-          • Collaborated with architects, MEP engineers, and structural
-          consultants to align designs.<br />
-          • Prepared budgets and procurement schedules to support timely
-          construction.<br />
-          • Coordinated city permitting and approvals.<br />
-          • Maintained updated records and cultivated strong subcontractor
-          relationships.
+          - Performed detailed quantity takeoffs and material cost estimates for commercial and residential projects.<br />
+          - Collaborated with architects, MEP engineers, and structural consultants to align designs.<br />
+          - Prepared budgets and procurement schedules to support timely construction.<br />
+          - Coordinated city permitting and approvals.<br />
+          - Maintained updated records and cultivated strong subcontractor relationships.
         </p>
       </div>
       <div class="project-card">
         <h3>V ONE DESIGN STUDIO</h3>
         <p class="project-date">Hyderabad, Mar 2022 - Jul 2022</p>
         <p>
-          • Created physical and digital models for architectural projects.<br />
-          • Supervised onsite work for plan alignment.<br />
-          • Worked on villa communities and interior design.<br />
-          • Developed 2D and 3D drawings with AutoCAD and SketchUp.
+          - Created physical and digital models for architectural projects.<br />
+          - Supervised onsite work for plan alignment.<br />
+          - Worked on villa communities and interior design.<br />
+          - Developed 2D and 3D drawings with AutoCAD and SketchUp.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container section contact-section animate-fade-in delay-4">
+  <section id="contact" class="container section contact-section">
     <h2 class="section-title">Contact Me</h2>
     <div class="contact-info">
       <div>
         <img src="./assets/email.png" alt="Email Icon" class="icon-small" />
-        <a href="mailto:hchitta99@gmail.com" class="contact-link"
-          >hchitta99@gmail.com</a
-        >
+        <a href="mailto:hchitta99@gmail.com" class="contact-link">hchitta99@gmail.com</a>
       </div>
       <div>
-        <img src="./assets/linkedin.png" alt="LinkedIn
+        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon-small" />
+        <a
+          href="https://www.linkedin.com/in/harikachitta/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+          >LinkedIn Profile</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
