@@ -9,11 +9,12 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-brand">Harika</div>
+    <div class="navbar-brand">Harika Chitta</div>
     <ul class="navbar-menu">
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Professional Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Reach Out at</a></li>
     </ul>
     <div class="hamburger" aria-label="Menu" aria-expanded="false">
       <span></span>
@@ -23,41 +24,93 @@
   </nav>
 
   <main>
-    <section class="hero fade-in">
-      <h1>Hello, I'm Harika</h1>
-      <p>A passionate Web Developer creating modern and responsive designs.</p>
-      <div class="buttons">
-        <a href="assets/Resume_HarikaChitta.pdf" class="btn primary-btn" download>Download Resume</a>
-        <a href="#projects" class="btn secondary-btn">View Projects</a>
+    <section class="hero fade-in" id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Harika Chitta</h1>
+        <p class="section__text__p2">Project Engineer</p>
+        <div class="btn-container">
+          <a href="assets/Resume_HarikaChitta.pdf" class="btn primary-btn" download>Download Resume</a>
+          <a href="assets/Arch_portfolio.pdf" class="btn secondary-btn" download>Architecture Portfolio</a>
+          <a href="#contact" class="btn primary-btn">Contact Me</a>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/harikachitta/" target="_blank">
+            <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon" />
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section about-section fade-in" id="about">
-      <h2>About Me</h2>
-      <p>I am a developer with skills in front-end and back-end web technologies, passionate about building user-focused experiences.</p>
-    </section>
-
-    <section class="section fade-in" id="projects">
-      <h2>Projects</h2>
-      <div class="cards project-list">
-        <div class="card">Project 1 - Description</div>
-        <div class="card">Project 2 - Description</div>
-        <div class="card">Project 3 - Description</div>
+    <section id="about" class="section fade-in">
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      <div class="about-section">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="assets/experience.png" alt="Experience icon" class="icon">
+            <h3>Experience</h3>
+            <p>2+ Years <br> Pre-Construction Engineer </p>
+          </div>
+          <div class="details-container">
+            <img src="assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>Bachelor's - SVC Architecture<br>Master's - UT Arlington, Construction Management</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Detail-oriented and motivated Construction Management professional with a strong foundation in cost estimation, project planning, and architectural design. Seeking a challenging role where I can apply my expertise to drive efficiency and deliver innovative and sustainable construction solutions.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section contact-section fade-in" id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me via the links below.</p>
+    <section id="experience" class="section fade-in">
+      <p class="section__text__p1">Explore My</p>
+      <h2 class="title">Experience</h2>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h3 class="experience-sub-title">Project Management & Estimation Tools</h3>
+          <ul class="tools-list">
+            <li><img src="assets/checkmark.png" class="icon"> Procore</li>
+            <li><img src="assets/checkmark.png" class="icon"> Bluebeam Revu</li>
+            <li><img src="assets/checkmark.png" class="icon"> Insite</li>
+            <li><img src="assets/checkmark.png" class="icon"> Primavera P6</li>
+            <li><img src="assets/checkmark.png" class="icon"> RS Means</li>
+            <li><img src="assets/checkmark.png" class="icon"> AutoCAD</li>
+            <li><img src="assets/checkmark.png" class="icon"> BIM, VRay, SketchUp, PlanGrid, OST</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h2 class="title">Projects</h2>
+      <div class="project-list">
+        <div class="details-container">
+          <h3 class="project-title">First Infra LLC</h3>
+          <p class="project-date">The Colony | Sep 2024 - Present</p>
+          <p class="project-desc">Performed quantity takeoffs, collaborated with architects/engineers, coordinated permitting, and maintained bid documentation. Fostered strong relationships with subcontractors to streamline execution.</p>
+        </div>
+        <div class="details-container">
+          <h3 class="project-title">V One Design Studio</h3>
+          <p class="project-date">Hyderabad | Mar 2022 - Jul 2022</p>
+          <p class="project-desc">Created architectural models, supervised site work, and produced 2D/3D drawings using AutoCAD, SketchUp, and VR tools for villas and interiors.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <p class="section__text__p1">Get in Touch</p>
+      <h2 class="title">Contact Me</h2>
       <div class="contact-links">
-        <a href="mailto:harika@example.com" target="_blank">
-          <img src="assets/email.png" alt="Email" width="30"/>
+        <a href="mailto:hchitta99@gmail.com">
+          <img src="assets/email.png" alt="email icon" class="icon" />
+          hchitta99@gmail.com
         </a>
-        <a href="https://github.com/harikachitta" target="_blank">
-          <img src="assets/github.png" alt="GitHub" width="30"/>
-        </a>
-        <a href="https://linkedin.com/in/harikachitta" target="_blank">
-          <img src="assets/linkedin.png" alt="LinkedIn" width="30"/>
+        <a href="https://www.linkedin.com/in/harikachitta/" target="_blank">
+          <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon" />
+          LinkedIn
         </a>
       </div>
     </section>
