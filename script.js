@@ -1,37 +1,42 @@
 // Menu toggle for hamburger nav
 function toggleMenu() {
-    const menu = document.querySelector(".nav-links");
-    const nav = document.querySelector("nav"); // updated to generic nav element
-    const menuIcon = document.querySelector(".menu-icon");
+  const menu = document.querySelector(".navbar-menu");
+  const hamburger = document.querySelector(".hamburger");
 
-    menu.classList.toggle("open");
-    nav.classList.toggle("open");
+  if (menu && hamburger) {
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
 
-    // Accessibility: toggle aria-expanded on hamburger icon if present
-    if (menuIcon) {
-        const expanded = menuIcon.getAttribute("aria-expanded") === "true";
-        menuIcon.setAttribute("aria-expanded", !expanded);
-    }
+    // Accessibility: toggle aria-expanded on hamburger button
+    const expanded = hamburger.getAttribute("aria-expanded") === "true";
+    hamburger.setAttribute("aria-expanded", !expanded);
+  }
 }
 
-// Scroll-triggered fade-in animations
-document.addEventListener('DOMContentLoaded', () => {
-    const faders = document.querySelectorAll('.fade-in');
+// Event listener for hamburger click
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  if (hamburger) {
+    hamburger.addEventListener("click", toggleMenu);
+  }
 
-    const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
+  // Scroll-triggered fade-in animations
+  const faders = document.querySelectorAll('.fade-in');
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        });
-    }, appearOptions);
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
 
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
 });
