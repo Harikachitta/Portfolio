@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harika Chitta | Project Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="media.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navigation -->
-  <nav id="nav">
+  <nav id="nav" class="sticky-nav">
     <div class="logo">Harika Chitta</div>
     <ul class="nav-links">
       <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div id="hamburger" aria-label="Toggle Menu" tabindex="0">
+    <div id="hamburger" aria-label="Toggle Menu" tabindex="0" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
@@ -30,14 +30,14 @@
 
   <!-- Hero / Profile Section -->
   <section id="profile" class="container">
-    <div class="profile-pic">
+    <div class="profile-pic animate-fade-in">
       <img
         src="./assets/profile-pic.jpeg"
         alt="Harika Chitta Profile Picture"
         loading="lazy"
       />
     </div>
-    <div class="profile-text">
+    <div class="profile-text animate-fade-in delay-1">
       <p class="intro-text">Hello, I'm</p>
       <h1 class="name">Harika Chitta</h1>
       <p class="title">Project Engineer</p>
@@ -71,33 +71,9 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="container section">
+  <section id="about" class="container section animate-slide-up">
     <h2 class="section-title">About Me</h2>
     <div class="about-wrapper">
-      <div class="about-cards">
-        <div class="card">
-          <img
-            src="./assets/experience.png"
-            alt="Experience Icon"
-            class="icon-large"
-          />
-          <h3>Experience</h3>
-          <p>2+ Years as Pre-Construction Engineer</p>
-        </div>
-        <div class="card">
-          <img
-            src="./assets/education.png"
-            alt="Education Icon"
-            class="icon-large"
-          />
-          <h3>Education</h3>
-          <p>
-            Bachelor's in Architecture, SRI Venkateshwara College<br />
-            Master's in Construction Management, University of Texas at
-            Arlington
-          </p>
-        </div>
-      </div>
       <div class="about-text">
         <p>
           Detail-oriented and motivated Construction Management professional
@@ -109,111 +85,69 @@
     </div>
   </section>
 
+  <!-- Education Section -->
+  <section id="education" class="container section animate-slide-up delay-1">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <div class="edu-card">
+        <h3>Bachelor's in Architecture</h3>
+        <p>SRI Venkateshwara College</p>
+        <p>Year: XXXX - XXXX</p>
+      </div>
+      <div class="edu-card">
+        <h3>Master's in Construction Management</h3>
+        <p>University of Texas at Arlington</p>
+        <p>Year: XXXX - XXXX</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Experience Section -->
-  <section id="experience" class="container section">
+  <section id="experience" class="container section animate-slide-up delay-2">
     <h2 class="section-title">Experience & Skills</h2>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <h3>First Infra LLC</h3>
+        <p class="project-date">The Colony, Sep 2024 - Present</p>
+        <ul>
+          <li>Performed detailed quantity takeoffs and material cost estimates for commercial and residential projects.</li>
+          <li>Collaborated with architects, MEP engineers, and structural consultants to align designs.</li>
+          <li>Prepared budgets and procurement schedules to support timely construction.</li>
+          <li>Coordinated city permitting and approvals.</li>
+          <li>Maintained updated records and cultivated strong subcontractor relationships.</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h3>V ONE DESIGN STUDIO</h3>
+        <p class="project-date">Hyderabad, Mar 2022 - Jul 2022</p>
+        <ul>
+          <li>Created physical and digital models for architectural projects.</li>
+          <li>Supervised onsite work for plan alignment.</li>
+          <li>Worked on villa communities and interior design.</li>
+          <li>Developed 2D and 3D drawings with AutoCAD and SketchUp.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="skills-title">Skills</h3>
     <div class="skills-grid">
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>Procore</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>Bluebeam Revu</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>Insite</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>Primavera P6</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>RS Means Cost Data</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>AutoCAD</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>BIM</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>VRay</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>PlanGrid</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>On-Screen Takeoff (OST)</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>Lumion</p>
-      </article>
-      <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Skill icon"
-          class="icon-small"
-        />
-        <p>SketchUp</p>
-      </article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Procore</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Bluebeam Revu</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Insite</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Primavera P6</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>RS Means Cost Data</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>AutoCAD</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>BIM</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>VRay</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>PlanGrid</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>On-Screen Takeoff (OST)</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>Lumion</p></article>
+      <article><img src="./assets/checkmark.png" alt="Skill icon" class="icon-small" /><p>SketchUp</p></article>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="container section">
+  <section id="projects" class="container section animate-slide-up delay-3">
     <h2 class="section-title">Projects</h2>
     <div class="projects-wrapper">
       <div class="project-card">
@@ -245,7 +179,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container section contact-section">
+  <section id="contact" class="container section contact-section animate-fade-in delay-4">
     <h2 class="section-title">Contact Me</h2>
     <div class="contact-info">
       <div>
@@ -255,16 +189,4 @@
         >
       </div>
       <div>
-        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon-small" />
-        <a
-          href="https://www.linkedin.com/in/harikachitta/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-          >LinkedIn Profile</a
-        >
-      </div>
-    </div>
-  </section>
-
-  <script src="
+        <img src="./assets/linkedin.png" alt="LinkedIn
