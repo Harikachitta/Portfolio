@@ -7,19 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
 
-      // Accessibility toggle
       const expanded = hamburger.getAttribute("aria-expanded") === "true";
       hamburger.setAttribute("aria-expanded", !expanded);
     });
   }
 
-  // Fade-in animation for sections
   const faders = document.querySelectorAll('.fade-in');
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
-  };
-
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -27,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.unobserve(entry.target);
       }
     });
-  }, observerOptions);
+  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
